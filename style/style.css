@@ -1,0 +1,121 @@
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 500px;
+  box-shadow: 3px 4px 20px 0px;
+  border-radius: 25px;
+}
+section {
+  width: 100%;
+}
+
+section:nth-child(1) > div {
+  background: rgb(78, 33, 202);
+  background: radial-gradient(
+    circle,
+    rgba(78, 33, 202, 1) 0%,
+    rgba(78, 33, 202, 0.75) 20%,
+    rgba(78, 33, 202, 1) 100%
+  );
+  height: 450px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 25px;
+  padding: 25px;
+}
+
+h1 {
+  color: hsl(241, 100%, 89%);
+  font-size: 1.2rem;
+  margin: 0 0 25px 0;
+}
+
+section > div > div > p {
+  color: hsl(241, 100%, 89%);
+}
+
+section:nth-child(2) {
+  background-color: hsl(0, 0%, 100%);
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 25px;
+}
+
+section:nth-child(2) > div {
+  display: flex;
+}
+
+section:nth-child(2) > div:nth-child(2),
+section:nth-child(2) > div:nth-child(3),
+section:nth-child(2) > div:nth-child(4),
+section:nth-child(2) > div:nth-child(5) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 75%;
+  flex: 1 1 75%;
+}
+
+section > div > div > p > span {
+  color: hsl(0, 0%, 100%);
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+section > div > div > p {
+  display: flex;
+  flex-direction: column;
+}
+
+section:nth-child(1) > div > div:nth-child(2) {
+  background: rgb(78, 33, 202);
+  background: linear-gradient(
+    180deg,
+    rgba(78, 33, 202, 1) 0%,
+    rgba(78, 33, 202, 0.35898109243697474) 95%
+  );
+  padding: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+}
+
+section:nth-child(1) > div > div:nth-child(3) > h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 15px 0 0 0;
+}
+
+section:nth-child(1) > div > div:nth-child(4) > p {
+  font-size: 01rem;
+  font-weight: 500;
+  margin: 15px 0 0 0;
+  text-align: center;
+}
